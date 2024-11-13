@@ -1,0 +1,96 @@
+:root {
+    /* Custom colors */
+    --regent-100: #a2d2e6;
+    --regent-200: #85c6e0;
+    --regent-300: #6aafdc;
+    --regent-400: #4c91d6;
+    --regent-500: #2a78c0;
+
+    --ocean-100: #74C69D;
+    --ocean-200: #52B788;
+    --ocean-300: #40916C;
+    --ocean-400: #2D6A4F;
+    --ocean-500: #1B4332;
+
+    --orleans-100: #f2d35a;
+    --orleans-200: #f6b83c;
+    --orleans-300: #f59b2e;
+    --orleans-400: #f2801c;
+    --orleans-500: #e06010;
+    
+    --scarlet-100: #FF4D6D;
+    --scarlet-200: #C9184A;
+    --scarlet-300: #A4133C;
+    --scarlet-400: #800F2F;
+    --scarlet-500: #590D22;
+
+    --monochrome-100: #d9d9d9;
+    --monochrome-200: #b3b3b3;
+    --monochrome-300: #808080;
+    --monochrome-400: #4d4d4d;
+    --monochrome-500: #1a1a1a;
+}
+
+body, html {
+    background: var(--monochrome-100);
+}
+
+.container-fluid {
+    max-width: 1900px;
+}
+
+.wrapper {
+    background-color: #e7ecee;
+    min-height: 500px;
+    border-radius: 1rem;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-navbar {
+    width: 100%;
+}
+
+.banner-row {
+    background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%),
+        url('../img/solar-tax-credit-hero.webp');
+    max-width: 100%;
+    background-size: cover; /* Asegura que la imagen cubra toda la fila */
+    background-position: center; /* Centra la imagen en la fila */
+    height: 400px; /* Ajusta la altura de la fila según lo desees */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 0.5rem;
+}
+
+/* Opcional: para poner un fondo semitransparente detrás del texto */
+.banner-row .col {
+    padding: 20px; /* Padding para asegurar que el contenido no esté pegado al borde */
+    border-radius: 10px; /* Bordes redondeados para un toque visual */
+}
+
+.info-card {
+    max-width: 16rem;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .content {
+        padding: 0;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+} */
+
+.review-card img {
+    border-radius: 9999px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
