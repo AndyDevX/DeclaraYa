@@ -19,8 +19,16 @@ Route::get('/', function () {
 });
 
 // Landing page para recibir al usuario e información general
-Route::get('/landing', function () {
-    return view('landing-page');
+Route::get('/landing', action: function () {
+    $users = [
+        "Ana de Armas" => "img/users/ana-armas.webp",
+        "Margaret Qualley"=> "img/users/margaret-qualley.webp",
+        "Dua Lipa"=> "img/users/dua-lipa.webp",
+        "Kathryn Newton"=> "img/users/kathryn-newton.webp",
+        "Macarena García"=> "img/users/macarena-garcia.webp",
+    ];
+
+    return view('landing', ['users'=> $users]);
 });
 
 // Formulario de registro o inicio de sesión
